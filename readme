@@ -1,0 +1,42 @@
+########### CERTIFY ###########
+# $Id: $
+# $Date: $
+
+# Description:
+The package includes diskscan.sh, a shell script which scans the
+local system for disk drives.  The results are logged via the
+"logger" command. 
+
+# Dependencies:
+The following Python rpm's are required.
+	lshw
+
+# Install:
+Install or upgrade the rpm:
+
+If you have diskscan in a yum repository, install as follows:
+
+	yum install diskscan
+		or
+	yum upgrade diskscan
+
+If you do not access to a yum repository, get a copy of the latest
+rpm and use localinstall as follows.
+
+	yum --localinstall diskscan<version>.rpm
+		or
+	yum --localupdate diskscan<version>.rpm
+
+
+#Package list:
+/etc/cron.daily/diskscan.cron
+/etc/cron.weekly/certify_check.cron
+/usr/local/sbin/diskscan.sh
+/usr/share/doc/certify-3.2/readme
+
+# Report Problems:
+If you run into problems contact:
+	Rich O'Hare
+	ohare2@llnl.gov
+	925-422-5897
+
